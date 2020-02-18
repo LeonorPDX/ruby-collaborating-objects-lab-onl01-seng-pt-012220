@@ -6,7 +6,7 @@ class MP3Importer
   end
   
   def files
-    files_array = @path.entries
+    files_array = Dir.entries(@path)
     files_array.select.end_with?(".mp3")
   end
   
