@@ -1,13 +1,15 @@
 class MP3Importer
-  attr_accessor :path
+  attr_accessor :path, :files
+  
   
   def initialize(file_path)
     @path = file_path
+    @files = []
   end
   
   def files
-    files_array = Dir.entries(@path)
-    files_array.select {filename| filename.end_with?(".mp3")}
+    @files = Dir.entries(@path)
+    @files.select {filename| filename.end_with?(".mp3")}
   end
   
   def import
