@@ -16,6 +16,11 @@ class Song
     @artist = artist
   end
   
+  def self.new_by_filename(filename)
+    
+    
+  end
+  
   #def artist_name=(name)
   #  if (self.artist.name.nil?)
   #    self.artist = Artist.new(name)
