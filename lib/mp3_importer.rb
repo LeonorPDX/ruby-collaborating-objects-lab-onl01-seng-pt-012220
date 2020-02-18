@@ -8,8 +8,7 @@ class MP3Importer
   end
   
   def files
-    @files = Dir.entries(@path)
-    @files.select {filename| filename.end_with?(".mp3")}
+    @files = Dir.entries(@path).select{filename| filename.end_with?(".mp3")}
   end
   
   def import
