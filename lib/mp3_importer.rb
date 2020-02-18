@@ -6,7 +6,9 @@ class MP3Importer
   end
   
   def files
+    files_array = @path.entries
     
+    files_array.select.ends_with
   end
   
   def import
